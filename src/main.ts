@@ -102,7 +102,7 @@ const obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios = (pacientes: Pacientes
     const pacientesPediatra: Pacientes[] = obtenPacientesAsignadosAPediatria(pacientes);
 
     for (let i = 0; i < pacientesPediatra.length; i++) {
-        if (pacientesPediatra[i].edad < 10) {
+        if (pacientesPediatra[i].edad > 10) {
             pacientesPediatra.splice(i, 1);
         }
     }
